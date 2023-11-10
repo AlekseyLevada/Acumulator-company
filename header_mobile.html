@@ -1,0 +1,218 @@
+<link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700&family=Russo+One&display=swap"
+    rel="stylesheet" />
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .company-search-form,
+    .company-search-form__button_reset {
+        display: none !important;
+    }
+
+    .mobile-page .company-search-form__button_search:before {
+        -webkit-mask-box-image: none !important;
+    }
+
+    .company-header {
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .company-header__menu {
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #003399;
+        border-radius: 8px;
+    }
+
+    .company-header__menu:before {
+        background-image: url('/system/ckeditor_assets/pictures/437130/content_burger.png') !important;
+        background: transparent;
+        width: 20px;
+        height: 14px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    ._customer-header {
+        padding: 10px;
+    }
+
+    ._customer-header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    ._customer-header__logo-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    ._customer-contacts__item-phone {
+        position: relative;
+        padding-left: 27px;
+    }
+
+    ._customer-contacts__item-phone a {
+        font-family: Geologica;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 300;
+        color: #000000 !important;
+        text-decoration: none;
+    }
+
+    ._customer-contacts__item-phone::before {
+        content: url(/system/ckeditor_assets/pictures/437131/content_phone.png);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    ._customer-header__btns {
+        display: flex;
+        column-gap: 6px;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    ._customer-btn__callback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 133px);
+        height: 39px;
+        font-family: Geologica;
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 500;
+        color: #003399;
+        text-transform: uppercase;
+        border-radius: 8px;
+        border: 1px solid #003399;
+        background-color: transparent;
+    }
+
+    ._customer-social {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+    }
+
+    .search-form {
+        margin: 0;
+        position: relative;
+    }
+
+    ._customer-search__input {
+        display: block;
+        width: 100%;
+        height: 40px !important;
+        padding-left: 16px !important;
+        padding-right: 40px;
+        font-family: 'Geologica';
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 100;
+        color: #000;
+        border-radius: 5px;
+        background-color: #cbd6ea;
+        border: none;
+        outline: none;
+    }
+
+    ._customer-search__input::placeholder {
+        font-family: 'Geologica';
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 300;
+        color: #003399;
+    }
+
+    ._customer-search__button {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<header class="_customer-section _customer-header">
+    <div class="_customer-header__inner">
+        <div class="_customer-header__logo-box">
+            <div class="_customer-header__burger"></div>
+            <a class="_customer-header__logo-link" href="/">
+                <img class="_customer-header__logo-img" src="/system/ckeditor_assets/pictures/437125/content_logo.png"
+                    alt="" />
+            </a>
+        </div>
+        <div class="_customer-contacts__item _customer-contacts__item-phone">
+            <a onclick="yaCounter93280302.reachGoal('megasite_mobile_tel');return true;" href="tel:+78124093918">+7
+                (812) 409-39-18</a>
+        </div>
+    </div>
+    <div class="_customer-header__btns">
+        <button class="_customer-btn__callback ab-order js-apress-order-button js-orders-callback-link"
+            data-button-type="order_callback" data-company="99783180" data-company-id="99783180"
+            data-company-name="Петербургская Аккумуляторная Компания" data-company-name-rest=""
+            data-company-url="/catalog" data-params='{"company_id":"99783180"}' data-statistics="1" data-type="callback"
+            onclick="yaCounter93280302.reachGoal('megasite_mobile_callback');return true;">
+            Заказать звонок
+        </button>
+        <div class="_customer-social">
+            <a href="https://wa.me/79219131568"
+                onclick="yaCounter93280302.reachGoal('megasite_mobile_whatsapp');return true;" target="_blank">
+                <img src="/system/ckeditor_assets/pictures/437128/content_whatsapp.png" alt="whatsapp" />
+            </a>
+            <a href="viber://chat?number=%2B79219131568"
+                onclick="yaCounter93280302.reachGoal('megasite_mobile_viber');return true;" target="_blank">
+                <img src="/system/ckeditor_assets/pictures/437127/content_viber.png" alt="viber" />
+            </a>
+            <a href="https://t.me/akb98_piskarevskiy" onclick="yaCounter93280302.reachGoal('megasite_mobile_tg');return true;"
+                target="_blank">
+                <img src="/system/ckeditor_assets/pictures/437126/content_tg.png" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="_customer-search__menu">
+        <form accept-charset="UTF-8" accept-encoding="UTF-8" action="/catalog"
+            class="_customer-search search-form with-search-icon js-company-search-hints-form" method="get"
+            onsubmit="formSubmitter.disableButtons(this, null, null);">
+            <div style="margin: 0; padding: 0; display: inline">
+                <input name="utf8" type="hidden" value="✓" />
+            </div>
+
+            <div class="_customer-search__input-wrapper sf-input-wrapper">
+                <input autocomplete="off"
+                    class="_customer-search__input sf-input js-reset-field js-company-search-hints-input" id="q"
+                    maxlenght="255" name="q" placeholder="Найти товар или услугу" type="text" />
+            </div>
+            <button class="_customer-search__button" name="commit"
+                onclick="yaCounter93280302.reachGoal('megasite_mobile_search');return true;" type="submit"
+                value="Поиск">
+                <img src="/system/ckeditor_assets/pictures/437129/content_search.png" alt="" />
+            </button>
+        </form>
+    </div>
+</header>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document
+            .querySelector('._customer-header__burger')
+            .append(document.querySelector('.company-header__menu.js-show-toolbar-menu.js-ga-link'));
+    });
+</script>

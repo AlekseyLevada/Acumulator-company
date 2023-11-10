@@ -1,0 +1,1358 @@
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;700&family=Russo+One&display=swap"
+    rel="stylesheet">
+<link href="/assets/custom_assets/swiper.min.css" rel="stylesheet" />
+<link href="/assets/custom_assets/megasite_slider.min.css" rel="stylesheet" />
+<style type="text/css">
+    /* Start reset */
+
+    .modern-skin .company-content {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .tmpl-company-content {
+        background-color: transparent;
+    }
+
+    .company-content {
+        padding: 0px;
+        line-height: inherit;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0px;
+    }
+
+    .modern-skin .company-header:not(.company-about__header):not(.company-header__products) {
+        margin: 0 !important;
+    }
+
+    .breadcrumbs-slider__container {
+        display: none;
+    }
+
+    ._customer-visually-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    .company-header__content {
+        display: block;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .cpc-header {
+        display: none;
+    }
+
+    .cp-text-wrapper {
+        margin: 0;
+    }
+
+    ._customer-hash span {
+        display: block;
+    }
+
+    ._customer-hash ul,
+    ._customer-hash ol,
+    ._customer-hash li {
+        list-style: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    ._customer-hash * {
+        font-family: 'Arial', sans-serif;
+        color: #404040;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        transition: .3s ease-in-out;
+    }
+
+    /* End reset */
+
+    /* Main Styles*/
+
+    ._customer-opt {
+        background: #ffffff;
+    }
+
+    ._customer-intro {
+        background: url(/system/ckeditor_assets/pictures/453873/content_intro_bg.png) no-repeat center/cover;
+    }
+
+    ._customer-intro-container {
+        margin: 0 auto;
+        padding: 70px 10px 42px;
+        max-width: 1248px;
+    }
+
+    ._customer-intro__template {
+        width: 100%;
+        max-width: 872px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    ._customer-template__container {
+        padding: 40px;
+    }
+
+    ._customer-template__title {
+        margin-bottom: 40px;
+    }
+
+    ._customer-template__title h2 {
+        font: 400 63px/75px "Russo One", sans-serif;
+    }
+
+    ._customer-template__text {
+        margin-bottom: 40px;
+    }
+
+    ._customer-template__text span {
+        font: 300 18px/27px "Geologica", sans-serif;
+    }
+
+    ._customer-template__mail-link {
+        color: #404040 !important;
+        font: 300 18px/27px "Geologica", sans-serif;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    ._customer-template__mail-link:hover {
+        text-decoration: none;
+    }
+
+    ._customer-template__btn {
+        cursor: pointer !important;
+        width: 100% !important;
+        max-width: 260px !important;
+        margin: 0 !important;
+        background: #003399 !important;
+        color: #ffffff !important;
+        text-transform: uppercase !important;
+        border-radius: 8px !important;
+        height: 44px !important;
+        padding: 10px !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-template__btn:hover {
+        opacity: 0.7;
+        -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+    }
+
+    ._customer-slider-section {
+        background: #ffffff;
+    }
+
+    ._customer-slider-section-container {
+        max-width: 1420px;
+        margin: 0 auto;
+        padding: 90px 10px 0;
+    }
+
+    ._customer-slider__general-wrapper {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 50px;
+    }
+
+    ._customer-opt-slider__prev-btn {
+        cursor: pointer;
+        background: url(/system/ckeditor_assets/pictures/437055/content_arr-next.png) no-repeat center/cover;
+        width: 25px;
+        height: 13px;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    ._customer-opt-slider__prev-btn:hover {
+        opacity: 0.7;
+    }
+
+    ._customer-opt-slider {
+        overflow: hidden;
+        max-width: 1248px;
+    }
+
+    ._customer-slider-slide__link {
+        color: #404040 !important;
+        text-decoration: none;
+        font: 500 18px/22px "Geologica", sans-serif;
+    }
+
+    ._customer-slider-slide {
+        background: #f2f2f2;
+        border-radius: 8px;
+        height: 253px;
+    }
+
+    ._customer-slider-slide:hover {
+        background: #003399;
+    }
+
+    ._customer-slider-slide:hover ._customer-slider-slide__logo img {
+        -webkit-filter: invert(1) brightness(5.25);
+        filter: invert(1) brightness(5.25);
+    }
+
+    ._customer-slider-slide:hover ._customer-slider-slide__title h2 {
+        color: #ffffff;
+    }
+
+    ._customer-slider-slide__container {
+        padding: 30px 25px 40px 40px;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    ._customer-slider-slide__title {
+        margin-bottom: 25px;
+    }
+
+    ._customer-slider-slide__title h2 {
+        font: 500 18px/22px "Geologica", sans-serif;
+    }
+
+    ._customer-opt-slider__next-btn {
+        cursor: pointer;
+        background: url(/system/ckeditor_assets/pictures/437055/content_arr-next.png) no-repeat center/cover;
+        width: 25px;
+        height: 13px;
+    }
+
+    ._customer-opt-slider__next-btn:hover {
+        opacity: 0.7;
+    }
+
+    ._customer-opt-swiper__pagination {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 24px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    ._customer-slider-section .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: #404040;
+        opacity: 1;
+    }
+
+    ._customer-slider-section .swiper-pagination-bullet-active {
+        background-color: #003399;
+    }
+
+    ._customer-adv {
+        background: #ffffff;
+    }
+
+    ._customer-adv__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 90px 10px;
+    }
+
+    ._customer-adv__title {
+        margin-bottom: 60px;
+    }
+
+    ._customer-adv__title h2 {
+        font: 400 48px/57px "Russo One", sans-serif;
+        text-align: center;
+    }
+
+    ._customer-adv__grid {
+        margin-bottom: 90px;
+    }
+
+    ._customer-grid__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    ._customer-grid__item {
+        width: 100%;
+        max-width: 307px;
+    }
+
+    ._customer-grid__item-container {
+        padding: 29px;
+    }
+
+    ._customer-grid__item-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    ._customer-grid__item-text span {
+        font: 300 16px/24px "Geologica", sans-serif;
+        text-align: center;
+    }
+
+    ._customer-adv-slider {
+        display: none;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    ._customer-slider-slide__logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-adv-slider-slide-text span {
+        font: 300 16px/24px "Geologica", sans-serif;
+        text-align: center;
+    }
+
+    ._customer-adv-swiper__pagination {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 24px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-adv .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: #404040;
+        opacity: 1;
+    }
+
+    ._customer-adv .swiper-pagination-bullet-active {
+        background-color: #003399;
+    }
+
+    .customer-delivery {
+        background: #ffffff;
+        margin-bottom: 100px;
+    }
+
+    ._customer-delivery__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    ._customer-delivery__inner-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 10px;
+    }
+
+    ._customer-delivery__templates-block {
+        width: 100%;
+        max-width: 730px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        border-radius: 10px;
+        background: url(/system/ckeditor_assets/pictures/453395/content_country_template_bg.png) no-repeat center/cover;
+    }
+
+    ._customer-templates-block__container {
+        padding: 20px 40px 197px;
+    }
+
+    ._customer-templates-block__title {
+        margin-bottom: 10px;
+    }
+
+    ._customer-templates-block__title h2 {
+        font: 400 24px/28px "Russo One", sans-serif;
+        text-transform: uppercase;
+    }
+
+    ._customer-table__container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+    }
+
+    ._customer-table__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #ffffff;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1490196078);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1490196078);
+        border-radius: 8px;
+    }
+
+    ._customer-table__item-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 21px;
+    }
+
+    ._customer-contacts {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        background: #404040;
+        border-radius: 10px;
+    }
+
+    ._customer-contacts span {
+        padding-left: 30px;
+        position: relative;
+        font: 300 18px/27px "Geologica", sans-serif;
+        color: #ffffff;
+        display: inline;
+    }
+
+    ._customer-contacts span::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        top: 9px;
+        left: 10px;
+        background: #ffffff;
+        border-radius: 50%;
+    }
+
+    ._customer-contacts__container {
+        padding: 20px 40px;
+    }
+
+    ._customer-contacts-title {
+        margin-bottom: 10px;
+    }
+
+    ._customer-contacts-title h2 {
+        font: 500 18px/27px "Geologica", sans-serif;
+        color: #ffffff;
+    }
+
+    ._customer-contacts__list {
+        padding-left: 28px;
+    }
+
+    ._customer-contacts__list ul {
+        list-style: none;
+    }
+
+    ._customer-contacts__list--1 {
+        margin-bottom: 30px;
+    }
+
+    ._customer-contacts__list-item {
+        font: 300 18px/27px "Geologica", sans-serif;
+        color: #ffffff;
+        position: relative;
+    }
+
+    ._customer-contacts__list-item::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        top: 10px;
+        left: -17px;
+        background: #ffffff;
+        border-radius: 50%;
+    }
+
+    ._customer-contacts__link {
+        color: #ffffff !important;
+        font: 300 18px/27px "Geologica", sans-serif;
+        text-decoration: none;
+        text-underline-offset: 5px;
+    }
+
+    ._customer-contacts__link:hover {
+        text-decoration: underline;
+    }
+
+    @media(max-width:1420px) {
+        ._customer-opt-slider__next-btn {
+            position: relative;
+            top: 163px;
+            right: 320px;
+            width: 80px;
+        }
+
+        ._customer-opt-slider__prev-btn {
+            position: relative;
+            top: 163px;
+            left: 320px;
+            width: 80px;
+        }
+
+        ._customer-slider__general-wrapper {
+            gap: 0;
+        }
+    }
+
+    @media(max-width:1250px) {
+        ._customer-grid__item-text {
+            text-align: center;
+        }
+
+        ._customer-grid__item-text span {
+            display: inline;
+        }
+
+        ._customer-adv__container {
+            padding: 90px 10px 0;
+        }
+
+        ._customer-delivery__inner-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ._customer-table__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        ._customer-templates-block__container {
+            padding: 20px 40px 120px;
+        }
+    }
+
+
+    @media(max-width:978px) {
+
+        ._customer-opt-slider__next-btn,
+        ._customer-opt-slider__prev-btn {
+            display: none;
+        }
+    }
+
+    @media(max-width:767px) {
+
+        ._customer-intro-container,
+        ._customer-slider-section-container,
+        ._customer-adv__container {
+            padding: 20px 10px;
+        }
+
+        ._customer-template__title h2 {
+            font-size: 44px;
+            line-height: 45px;
+        }
+
+        ._customer-template__title,
+        ._customer-adv-slider,
+        ._customer-contacts__list--1 {
+            margin-bottom: 20px;
+        }
+
+        ._customer-adv__title {
+            margin-bottom: 30px;
+        }
+
+        ._customer-template__text span,
+        ._customer-template__mail-link,
+        ._customer-slider-slide__title h2,
+        ._customer-adv-slider-slide-text span,
+        ._customer-contacts__list-item,
+        ._customer-contacts span,
+        ._customer-contacts__link {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        ._customer-template__container {
+            padding: 20px;
+        }
+
+        ._customer-opt-swiper__pagination {
+            margin-top: 10px;
+        }
+
+        ._customer-slider-slide__logo img {
+            width: 80px;
+        }
+
+        ._customer-slider-slide__title h2 {
+            text-align: center;
+        }
+
+        ._customer-adv__title h2 {
+            font-size: 32px;
+            line-height: 35px;
+        }
+
+        ._customer-adv__grid {
+            display: none;
+        }
+
+        ._customer-adv-slider {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        ._customer-delivery__inner-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        ._customer-delivery__templates-block {
+            max-width: 100%;
+        }
+
+        ._customer-adv ._customer-slider-slide__logo img {
+            width: 60px;
+        }
+
+        ._customer-adv ._customer-slider-slide__logo {
+            margin-bottom: 20px;
+        }
+
+        ._customer-templates-block__title h2 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        ._customer-table__container {
+            gap: 10px;
+        }
+
+        ._customer-table__item-container {
+            padding: 20px 10px;
+        }
+
+        ._customer-templates-block__container {
+            padding: 20px;
+        }
+
+        .customer-delivery {
+            margin-bottom: 0;
+        }
+
+        ._customer-delivery__container {
+            padding: 0 10px 20px;
+        }
+
+        ._customer-slider-slide {
+            height: 225px;
+        }
+    }
+
+    @media(max-width:480px) {
+
+        ._customer-intro-container,
+        ._customer-slider-section-container,
+        ._customer-adv__container {
+            padding: 10px;
+        }
+
+        ._customer-template__title h2 {
+            font-size: 32px;
+            line-height: 35px;
+        }
+
+        ._customer-template__title,
+        ._customer-adv-slider,
+        ._customer-contacts__list--1,
+        ._customer-template__text {
+            margin-bottom: 15px;
+        }
+
+        ._customer-template__text span,
+        ._customer-template__mail-link,
+        ._customer-slider-slide__title h2,
+        ._customer-adv-slider-slide-text span,
+        ._customer-contacts__list-item,
+        ._customer-contacts span,
+        ._customer-contacts__link {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        ._customer-adv__title h2 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        ._customer-templates-block__title h2 {
+            font-size: 24px;
+        }
+
+        ._customer-table__container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ._customer-delivery__inner-container {
+            gap: 10px;
+        }
+
+        ._customer-contacts-title h2 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        ._customer-contacts__container {
+            padding: 20px;
+        }
+
+        ._customer-slider-slide__container {
+            padding: 20px;
+        }
+
+        ._customer-adv-swiper__pagination {
+            margin-bottom: 15px;
+        }
+
+        ._customer-templates-block__title h2 {
+            font-size: 20px;
+        }
+        ._customer-slider-slide__title {
+            margin-bottom: 0;
+        }
+        ._customer-slider-slide__title h2 {
+            font-size: 16px;
+        }
+        ._customer-template__btn {
+            max-width: 100% !important;
+        }
+        ._customer-slider-slide {
+            height: 200px;
+        }
+    }
+
+    @media(max-width:360px) {
+        ._customer-template__title h2 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        ._customer-template__btn {
+            max-width: 100% !important;
+        }
+
+        ._customer-slider-slide {
+            height: 160px;
+        }
+
+        ._customer-adv__title h2 {
+            font-size: 24px;
+        }
+
+        ._customer-adv__title {
+            margin-bottom: 10px;
+        }
+
+        ._customer-contacts-title h2 {
+            font-size: 16px;
+        }
+
+        ._customer-slider-slide__logo img {
+            width: 50px;
+        }
+    }
+
+    @media(max-width:320px) {
+        ._customer-template__title h2 {
+            font-size: 23px;
+        }
+
+        ._customer-adv__title h2 {
+            font-size: 20px;
+        }
+
+        ._customer-templates-block__title h2 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+</style>
+<div class="_customer-hash">
+    <div class="_customer-hash__container">
+        <div class="_customer-opt">
+            <div class="_customer-opt-container">
+                <section class="_customer-intro">
+                    <div class="_customer-intro-container">
+                        <div class="_customer-intro__template _customer-template">
+                            <div class="_customer-template__container">
+                                <div class="_customer-template__title">
+                                    <h2>
+                                        Аккумуляторы оптом
+                                    </h2>
+                                </div>
+                                <div class="_customer-template__text">
+                                    <span>
+                                        Наша компания специализируется на снабжении аккумуляторными батареями
+                                        автопарков&nbsp;и розничных магазинов. Многолетний опыт и отлаженные каналы
+                                        поставок позволяют&nbsp;удовлетворить спрос любого клиента. Для получения
+                                        специальных условий для&nbsp;оптовых клиентов, отправьте ваш запрос на
+                                        электронную почту <a target="_blank"
+                                            onclick="yaCounter93280302.reachGoal('megasite_page_email'); return true;"
+                                            class="_customer-template__mail-link"
+                                            href="mailto:akb98@list.ru">akb98@list.ru</a>
+                                    </span>
+                                </div>
+                                <div class="_customer-template__btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                    data-company-contacts-url="/contacts"
+                                    data-company-name="Петербургская Аккумуляторная Компания"
+                                    data-params="{&quot;company_id&quot;:&quot;99783180&quot;}" data-type="message">
+                                    ЗАПРОСИТЬ ПРАЙС
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-slider-section">
+                    <div class="_customer-slider-section-container">
+                        <div class="_customer-slider__general-wrapper">
+                            <div class="_customer-opt-slider__prev-btn"></div>
+                            <div class="_customer-opt-slider swiper">
+                                <div class="_customer-slider-container swiper-wrapper">
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819161'); return true;"
+                                        target="_blank"
+                                        href="/catalog/k-11819161-akkumulyatory_dlya_ibp_statsionarnyye">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Аккумуляторы для ИБП / стационарные
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/413_original.png?1689010118"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819162'); return true;"
+                                        target="_blank" href="/catalog/k-11819162-akkumulyatory_dlya_gruzovoy_tekhniki">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Аккумуляторы для грузовой техники
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/414_original.png?1689010134"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819163'); return true;"
+                                        target="_blank" href="/catalog/k-11819163-akkumulyatory_dlya_legkovykh_avto">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Аккумуляторы для легковых авто
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/415_original.png?1689010146"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819164'); return true;"
+                                        target="_blank" href="/catalog/k-11819164-akkumulyatory_dlya_lodok_i_katerov">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Аккумуляторы для лодок и катеров
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/416_original.png?1689010157"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819165'); return true;"
+                                        target="_blank" href="/catalog/k-11819165-akkumulyatory_dlya_mototekhniki">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Аккумуляторы для мототехники
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/417_original.png?1689010169"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819167'); return true;"
+                                        target="_blank" href="/catalog/k-11819167-soputstvuyushchiye_tovary">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Сопутствующие товары
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/418_original.png?1689010179"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11819168'); return true;"
+                                        target="_blank" href="/catalog/k-11819168-tyagovyye_akkumulyatory">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Тяговые аккумуляторы
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st47.stpulscen.ru/images/product_group_images/001/729/419_original.png?1689010191"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11857955'); return true;"
+                                        target="_blank" href="/catalog/k-11857955-vspomogatelnyye_avto_akkumulyatory">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Вспомогательные авто аккумуляторы
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st48.stpulscen.ru/images/product_group_images/001/735/209_original.png?1689920422"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="_customer-slider-slide__link swiper-slide"
+                                        onclick="yaCounter93280302.reachGoal('megasite_page_link_catalog_11857962'); return true;"
+                                        target="_blank" href="/catalog/k-11857962-istochniki_bespereboynogo_pitaniya">
+                                        <div class="_customer-slider-slide">
+                                            <div class="_customer-slider-slide__container">
+                                                <div class="_customer-slider-slide__title">
+                                                    <h2>
+                                                        Источники Бесперебойного Питания
+                                                    </h2>
+                                                </div>
+                                                <div class="_customer-slider-slide__logo">
+                                                    <img src="https://st48.stpulscen.ru/images/product_group_images/001/735/210_original.png?1689920434"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="_customer-opt-slider__next-btn"></div>
+                        </div>
+                    </div>
+                    <div class="_customer-opt-swiper__pagination"></div>
+                </section>
+                <section class="_customer-adv">
+                    <div class="_customer-adv__container">
+                        <div class="_customer-adv__title">
+                            <h2>
+                                ПРЕИМУЩЕСТВА
+                            </h2>
+                        </div>
+                        <div class="_customer-adv__grid _customer-grid">
+                            <div class="_customer-grid__container">
+                                <div class="_customer-grid__item _customer-grid__item--1">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453879/content_adv_icon_1.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Профессиональный подбор АКБ для любого вида техники
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--2">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453880/content_adv_icon_2.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Большой выбор аккумуляторов
+                                            </span>
+                                            <span>
+                                                в наличии на складе
+                                            </span>
+                                            <span>
+                                                в Санкт-Петербурге
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--3">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453882/content_adv_icon_3.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Персональная система скидок
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--4">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453883/content_adv_icon_4.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Доставка по Санкт-Петербургу
+                                            </span>
+                                            <span>
+                                                в день оплаты.
+                                            </span>
+                                            <span>
+                                                Отправка заказ по РФ.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-adv-slider swiper">
+                            <div class="_customer-slider-container swiper-wrapper">
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide__container">
+                                        <div class="_customer-slider-slide__logo">
+                                            <img src="/system/ckeditor_assets/pictures/453879/content_adv_icon_1.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Профессиональный подбор АКБ для любого вида техники
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide__container">
+                                        <div class="_customer-slider-slide__logo">
+                                            <img src="/system/ckeditor_assets/pictures/453880/content_adv_icon_2.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Большой выбор аккумуляторов в наличии на складе в Санкт-Петербурге
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide__container">
+                                        <div class="_customer-slider-slide__logo">
+                                            <img src="/system/ckeditor_assets/pictures/453882/content_adv_icon_3.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Персональная система скидок
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide__container">
+                                        <div class="_customer-slider-slide__logo">
+                                            <img src="/system/ckeditor_assets/pictures/453883/content_adv_icon_4.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Доставка по Санкт-Петербургу в день оплаты. Отправка заказ по РФ.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-adv-swiper__pagination"></div>
+                    </div>
+                </section>
+                <section class="customer-delivery">
+                    <div class="_customer-delivery__container">
+                        <div class="_customer-delivery__inner-container">
+                            <div class="_customer-delivery__templates-block _customer-templates-block">
+                                <div class="_customer-templates-block__container">
+                                    <div class="_customer-templates-block__title">
+                                        <h2>
+                                            Доставка по всей стране
+                                        </h2>
+                                    </div>
+                                    <div class="_customer-templates-block__table _customer-table">
+                                        <div class="_customer-table__container">
+                                            <div class="_customer-table__item _customer-table__item--1">
+                                                <div class="_customer-table__item-container">
+                                                    <img src="/system/ckeditor_assets/pictures/453403/content_pec_logo.png"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                            <div class="_customer-table__item _customer-table__item--2">
+                                                <div class="_customer-table__item-container">
+                                                    <img src="/system/ckeditor_assets/pictures/453404/content_cdek_logo.png"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                            <div class="_customer-table__item _customer-table__item--3">
+                                                <div class="_customer-table__item-container">
+                                                    <img src="/system/ckeditor_assets/pictures/453405/content_dl_logo.png"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                            <div class="_customer-table__item _customer-table__item--4">
+                                                <div class="_customer-table__item-container">
+                                                    <img src="/system/ckeditor_assets/pictures/453406/content_bs_logo.png"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                            <div class="_customer-table__item _customer-table__item--5">
+                                                <div class="_customer-table__item-container">
+                                                    <img src="/system/ckeditor_assets/pictures/453407/content_kit_logo.png"
+                                                        alt="" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_customer-contacts">
+                                <div class="_customer-contacts__container">
+                                    <div class="_customer-contacts-title">
+                                        <h2>
+                                            Оперативно сделаем для вас:
+                                        </h2>
+                                    </div>
+                                    <div class="_customer-contacts__list _customer-contacts__list--1">
+                                        <ul>
+                                            <li class="_customer-contacts__list-item">
+                                                Подбор товара
+                                            </li>
+                                            <li class="_customer-contacts__list-item">
+                                                Выставим счет
+                                            </li>
+                                            <li class="_customer-contacts__list-item">
+                                                Согласуем скидку
+                                            </li>
+                                            <li class="_customer-contacts__list-item">
+                                                Подготовим все закрывающие документы
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="_customer-contacts-title">
+                                        <h2>
+                                            Контакты оптового отдела:
+                                        </h2>
+                                    </div>
+                                    <span>e-mail:</span>
+                                    <a onclick="yaCounter93280302.reachGoal('megasite_page_email'); return true;"
+                                        href="mailto:akb98@list" class="_customer-contacts__link">akb98@list
+                                    </a></br>
+                                    <span>тел:</span>
+                                    <a onclick="yaCounter93280302.reachGoal('megasite_page_tel'); return true;"
+                                        href="tel:89667527563" class="_customer-contacts__link">8(966)752-75-63
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper("._customer-opt-slider", {
+
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 800,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 3000,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            360: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            900: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 5,
+            },
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        pagination: {
+            el: '._customer-opt-swiper__pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '._customer-opt-slider__next-btn',
+            prevEl: '._customer-opt-slider__prev-btn',
+        },
+    });
+</script>
+
+<script>
+    var advSwiper = new Swiper("._customer-adv-slider", {
+
+        slidesPerView: 1,
+        speed: 800,
+        loop: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 3000,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        pagination: {
+            el: '._customer-adv-swiper__pagination',
+            clickable: true,
+        },
+
+    });
+</script>
+<script async>
+    const companyHeader = document.querySelector('.company-header__content')
+    companyHeader.classList.add('_customer-visually-hidden')
+</script>

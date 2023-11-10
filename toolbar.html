@@ -1,0 +1,337 @@
+<style>
+    .custom-company-toolbar.fixed {
+        z-index: 107;
+    }
+
+    .custom-company-toolbar {
+        overflow: inherit;
+    }
+
+    ._customer-toolbar {
+        padding: 10px 0;
+        background-color: #fff;
+        box-shadow: 0 1px 0 #c9c9c9;
+    }
+
+    ._customer-toolbar__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+
+    ._customer-toolbar__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        width: 100%;
+    }
+
+    ._customer-toolbar__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    ._customer-toolbar__menu-link {
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+        color: #404040 !important;
+        transition: all 0.2s ease;
+    }
+
+    ._customer-toolbar__menu-link:hover {
+        color: #003399 !important;
+    }
+
+    ._customer-toolbar__form {
+        flex: 1;
+        max-width: 267px;
+    }
+
+    ._customer-toolbar__form .search-form {
+        margin: 0;
+        position: relative;
+    }
+
+    ._customer-toolbar__form ._customer-search__input {
+        display: block;
+        width: 100%;
+        height: 40px !important;
+        padding-left: 16px !important;
+        padding-right: 40px;
+        font-family: 'Geologica';
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 100;
+        color: #000;
+        border-radius: 5px;
+        background-color: #cbd6ea;
+        border: none;
+        outline: none;
+    }
+
+    ._customer-toolbar__form ._customer-search__input::placeholder {
+        font-family: 'Geologica';
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 100;
+        color: #003399;
+    }
+
+    ._customer-toolbar__form ._customer-search__button {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    ._customer-toolbar__form ._customer-search__button:hover {
+        opacity: 0.7;
+    }
+
+    ._customer-toolbar__contact {
+        display: flex;
+        column-gap: 25px;
+        align-items: center;
+    }
+
+    ._customer-toolbar ._customer-btn__callback {
+        width: 169px;
+        height: 38px;
+        font-size: 14px;
+        color: #003399;
+        border-radius: 8px;
+        border-color: #003399;
+    }
+
+    ._customer-toolbar__contact-phone {
+        position: relative;
+        padding-left: 23px;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 300;
+        color: #000000 !important;
+    }
+
+    ._customer-toolbar__contact-phone::before {
+        content: url(/system/ckeditor_assets/pictures/437037/content_phone.png);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    ._customer-toolbar__contact-phone:hover {
+        text-decoration: underline;
+    }
+
+    ._customer-social {
+        column-gap: 11px;
+    }
+
+    @media (max-width: 1150px) {
+        ._customer-toolbar__contact,
+        ._customer-toolbar__menu,
+        ._customer-toolbar__inner {
+            column-gap: 10px;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        ._customer-toolbar ._customer-btn__callback {
+            width: 135px;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        ._customer-toolbar {
+            display: none;
+        }
+    }
+</style>
+<div class="_customer-section _customer-toolbar">
+    <div class="_customer-section__container">
+        <div class="_customer-toolbar__inner">
+            <a class="_customer-toolbar__item-logo" href="/"
+                ><img alt="" src="/system/ckeditor_assets/pictures/437035/content_logo.png"
+            /></a>
+
+            <ul class="_customer-toolbar__menu">
+                <li>
+                    <a
+                        class="_customer-toolbar__menu-link"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_link_about');return true;"
+                        href="/about"
+                        >О компании</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="_customer-toolbar__menu-link"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_link_catalog');return true;"
+                        href="/catalog"
+                        >Каталог товаров</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="_customer-toolbar__menu-link"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_link_contacts');return true;"
+                        href="/contacts"
+                        >Контакты</a
+                    >
+                </li>
+            </ul>
+
+            <div class="_customer-toolbar__form">
+                <form
+                    accept-charset="UTF-8"
+                    accept-encoding="UTF-8"
+                    action="/catalog"
+                    class="_customer-search search-form with-search-icon js-company-search-hints-form"
+                    method="get"
+                    onsubmit="formSubmitter.disableButtons(this, null, null);"
+                >
+                    <div style="margin: 0; padding: 0; display: inline">
+                        <input name="utf8" type="hidden" value="✓" />
+                    </div>
+
+                    <div class="_customer-search__input-wrapper sf-input-wrapper">
+                        <input
+                            autocomplete="off"
+                            class="_customer-search__input sf-input js-reset-field js-company-search-hints-input"
+                            id="q"
+                            maxlenght="255"
+                            name="q"
+                            placeholder="Найти товар или услугу"
+                            type="text"
+                        />
+                    </div>
+                    <button
+                        class="_customer-search__button"
+                        name="commit"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_search');return true;"
+                        type="submit"
+                        value="Поиск"
+                    >
+                        <img src="/system/ckeditor_assets/pictures/437036/content_search.png" alt="" />
+                    </button>
+                </form>
+            </div>
+
+            <div class="_customer-toolbar__contact">
+                <a
+                    class="_customer-toolbar__contact-phone"
+                    onclick="yaCounter93280302.reachGoal('megasite_toolbar_tel');return true;"
+                    href="tel:+78124093918"
+                    >+7 (812) 409-39-18</a
+                >
+                <button
+                    class="_customer-btn__callback ab-order js-apress-order-button js-orders-callback-link"
+                    data-button-type="order_callback"
+                    data-company="99783180"
+                    data-company-id="99783180"
+                    data-company-name="Петербургская Аккумуляторная Компания"
+                    data-company-name-rest=""
+                    data-company-url="/catalog"
+                    data-params='{"company_id":"99783180"}'
+                    data-statistics="1"
+                    data-type="callback"
+                    onclick="yaCounter93280302.reachGoal('megasite_toolbar_callback');return true;"
+                >
+                    Заказать звонок
+                </button>
+                <div class="_customer-social">
+                    <a
+                        href="https://wa.me/79219131568"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_whatsapp');return true;"
+                        target="_blank"
+                    >
+                        <img src="/system/ckeditor_assets/pictures/437027/content_whatsapp.png" alt="whatsapp" />
+                    </a>
+                    <a
+                        href="viber://chat?number=%2B79219131568"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_viber');return true;"
+                        target="_blank"
+                    >
+                        <img src="/system/ckeditor_assets/pictures/437028/content_viber-logo.png" alt="viber" />
+                    </a>
+                    <a
+                        href="https://t.me/akb98_piskarevskiy"
+                        onclick="yaCounter93280302.reachGoal('megasite_toolbar_tg');return true;"
+                        target="_blank"
+                    >
+                        <img src="/system/ckeditor_assets/pictures/437029/content_telegram.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script async>
+    (function (pages, groups, goods) {
+        const url = window.location.pathname;
+        if (
+            pages.has(url.replace('/pages', '')) ||
+            (groups && url.indexOf('/catalog/k-') != -1) ||
+            (goods && url.indexOf('/goods/') != -1)
+        ) {
+            document
+                .querySelector('head')
+                .insertAdjacentHTML(
+                    'beforeEnd',
+                    '<style>.megasite-breadcrumbs-slider__container{display:none}.megasite-breadcrumbs-slider__container+.page-content>.megasite-company-header:first-child,.megasite-breadcrumbs-slider__container+.page-content>.company-product-card{margin-top:0}</style>'
+                );
+        }
+    })(new Set(['/', '/contacts', '/catalog']), true, false);
+</script>
+<!-- start adva style -->
+<style>
+    ._customer-adva__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    ._customer-adva__item {
+        padding: 20px;
+        text-align: center;
+    }
+
+    ._customer-adva__item-image {
+        height: 50px;
+    }
+
+    ._customer-adva__item-image img {
+        height: 100%;
+    }
+
+    ._customer-adva__item-text {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    @media (max-width: 1100px) {
+        ._customer-adva__item-text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        ._customer-adva__item {
+            padding: 10px;
+        }
+    }
+</style>
+<!-- end adva style -->

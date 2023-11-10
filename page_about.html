@@ -1,0 +1,1714 @@
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;700&family=Russo+One&display=swap"
+    rel="stylesheet">
+<link href="/assets/custom_assets/swiper.min.css" rel="stylesheet" />
+<link href="/assets/custom_assets/megasite_slider.min.css" rel="stylesheet" />
+<style type="text/css">
+    /* Start reset */
+
+    .modern-skin .company-content {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .tmpl-company-content {
+        background-color: transparent;
+    }
+
+    .company-content {
+        padding: 0px;
+        line-height: inherit;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0px;
+    }
+
+    .modern-skin .company-header:not(.company-about__header):not(.company-header__products) {
+        margin: 0 !important;
+    }
+
+    .breadcrumbs-slider__container {
+        display: none;
+    }
+
+    ._customer-visually-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    .company-header__content {
+        display: block;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .cpc-header {
+        display: none;
+    }
+
+    .cp-text-wrapper {
+        margin: 0;
+    }
+
+    ._customer-hash span {
+        display: block;
+    }
+
+    ._customer-hash ul,
+    ._customer-hash ol,
+    ._customer-hash li {
+        list-style: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    ._customer-hash * {
+        font-family: 'Arial', sans-serif;
+        color: #404040;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        transition: .3s ease-in-out;
+    }
+
+    /* End reset */
+
+    /* Main Styles*/
+
+    ._customer-about {
+        background: #ffffff;
+    }
+
+    ._cutomer-intro {
+        background: #ffffff;
+    }
+
+    ._customer-intro__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 70px 10px 65px;
+    }
+
+    ._customer-intro__title {
+        margin-bottom: 40px;
+    }
+
+    ._customer-intro__title h2 {
+        font: 400 63px/75px "Russo One", sans-serif;
+    }
+
+    ._customer-intro__inner-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    ._customer-intro__info {
+        max-width: 758px;
+    }
+
+    ._customer-intro__info span {
+        font: 300 18px/27px "Geologica", sans-serif;
+        margin-bottom: 15px;
+    }
+
+    ._customer-intro__info span ._customer-bolder {
+        display: inline;
+        font: 700 18px/27px "Geologica", sans-serif;
+    }
+
+    ._customer-intro__info span:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    ._customer-intro__list ul {
+        list-style: none !important;
+        padding-left: 34px;
+    }
+
+    ._customer-intro__list-item {
+        font: 300 18px/27px "Geologica", sans-serif;
+        margin-bottom: 15px !important;
+        position: relative;
+    }
+
+    ._customer-intro__list-item:before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -34px;
+        background: url(/system/ckeditor_assets/pictures/453133/content_list_marker.png) no-repeat center/cover;
+        width: 24px;
+        height: 25px;
+    }
+
+    ._customer-intro__list-item:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+    ._customer-intro-general__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        top: -25px;
+    }
+
+    ._customer-slider_pagination-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-intro-slider__prev-btn {
+        cursor: pointer;
+        background: url(/system/ckeditor_assets/pictures/453135/content_slider_arow_inactive.png) no-repeat center/cover;
+        width: 30px;
+        height: 14px;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+
+    ._customer-intro-slider__prev-btn:hover {
+        background: url(/system/ckeditor_assets/pictures/453136/content_slider_arow_active.png);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+
+    ._customer-intro-swiper-btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 5px;
+    }
+
+    ._customer-intro-slider__next-btn {
+        cursor: pointer;
+        background: url(/system/ckeditor_assets/pictures/453135/content_slider_arow_inactive.png) no-repeat center/cover;
+        width: 30px;
+        height: 14px;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    ._customer-intro-slider__next-btn:hover {
+        background: url(/system/ckeditor_assets/pictures/453136/content_slider_arow_active.png) no-repeat center/cover;
+        width: 30px;
+        height: 14px;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    ._customer-intro-slider {
+        max-width: 400px;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    ._customer-certificates__item_1 {
+        max-width: 400px;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    ._customer-certificates__item_1 img {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    ._customer-certificates__item_1:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+    }
+
+    /* Popup start*/
+    ._customer-pop-up {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    ._customer-pop-up_active {
+        visibility: visible;
+        opacity: 1;
+        z-index: 10000;
+    }
+
+    ._customer-pop-up__overlay {
+        display: block !important;
+        background-color: #333;
+        opacity: 0.96;
+        cursor: -webkit-zoom-out;
+        cursor: zoom-out;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    ._customer-pop-up__overlay:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 400vh;
+        background-color: #333;
+        opacity: 0.96;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    ._customer-pop-up__content-wrapper {
+        display: -webkit-inline-box !important;
+        display: -ms-inline-flexbox !important;
+        display: inline-flex !important;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+
+    ._customer-pop-up__content {
+        overflow-y: auto;
+    }
+
+    ._customer-pop-up__content_wide {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    ._customer-pop-up__content img {
+        display: block;
+        max-width: 100%;
+    }
+
+    ._customer-pop-up__button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #333 center no-repeat;
+        -webkit-box-shadow: 2px 2px 4px #333;
+        box-shadow: 2px 2px 4px #333;
+        color: transparent;
+        line-height: 1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        -webkit-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        z-index: 2;
+    }
+
+    ._customer-pop-up__button:hover {
+        background-color: #444;
+    }
+
+    ._customer-pop-up__button_prev,
+    ._customer-pop-up__button_next {
+        position: fixed;
+        top: calc(50% - 20px);
+    }
+
+    ._customer-pop-up__button_prev {
+        background-image: url(/system/ckeditor_assets/pictures/186703/content_prev.png);
+        left: 1em;
+    }
+
+    ._customer-pop-up__button_next {
+        background-image: url(/system/ckeditor_assets/pictures/186700/content_next.png);
+        right: 1em;
+    }
+
+    ._customer-pop-up__button_close {
+        background-image: url(/system/ckeditor_assets/pictures/179441/content_x.png);
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+
+    ._customer-pop-up__button_hidden {
+        display: none !important;
+    }
+
+    ._customer-stop-scroll {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    ._customer-pop-up__content-wrapper {
+        max-height: 90vh;
+        max-width: 90vw;
+    }
+
+    ._customer-pop-up__content-wrapper>*,
+    ._customer-pop-up__content-wrapper img {
+        max-height: 90vh;
+    }
+
+    @media screen and (max-width: 1023px) {
+        ._customer-pop-up__content-wrapper {
+            max-height: 100%;
+            padding: 1em 0.5em calc(40px + 2em);
+        }
+
+        ._customer-pop-up__content-wrapper>* {
+            max-width: 100%;
+        }
+
+        ._customer-pop-up__button {
+            position: absolute;
+            top: auto;
+            bottom: 1em;
+        }
+
+        ._customer-pop-up__button_prev {
+            left: calc(50% - 80px);
+        }
+
+        ._customer-pop-up__button_next {
+            right: calc(50% - 80px);
+        }
+
+        ._customer-pop-up__button_close {
+            right: calc(50% - 20px);
+        }
+    }
+
+    /* Popup end */
+    ._customer-adv {
+        background: #ffffff;
+    }
+
+    ._customer-adv__container {
+        max-width: 1460px;
+        margin: 0 auto;
+        padding: 0 10px 90px;
+    }
+
+    ._customer-adv__title {
+        margin-bottom: 60px;
+    }
+
+    ._customer-adv__title h2 {
+        font: 400 48px/57px "Russo One", sans-serif;
+        text-align: center;
+    }
+
+    ._customer-grid__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    ._customer-grid__item {
+        max-width: 300px;
+    }
+
+    ._customer-grid__item_1 {
+        position: relative;
+        left: 35px;
+    }
+
+    ._customer-grid__item-logo {
+        text-align: center;
+        margin-bottom: 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-grid__item-text span {
+        max-width: 215px;
+        font: 300 18px/27px "Geologica";
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    ._customer-adv-slider {
+        display: none;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    ._customer-docs {
+        background: #F2F2F2;
+    }
+
+    ._customer-docs__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 90px 10px;
+    }
+
+    ._customer-docs__title {
+        margin-bottom: 60px;
+    }
+
+    ._customer-docs__title h2 {
+        font: 400 48px/57px "Russo One", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    ._customer-docs-general__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    ._customer-docs-slider__prev-btn {
+        cursor: pointer;
+        background: url(/system/ckeditor_assets/pictures/453135/content_slider_arow_inactive.png) no-repeat center/cover;
+        width: 30px;
+        height: 14px;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+
+    ._customer-docs-slider__prev-btn:hover {
+        background: url(/system/ckeditor_assets/pictures/453136/content_slider_arow_active.png);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+
+    ._customer-docs-swiper-btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 5px;
+    }
+
+    ._customer-docs-slider__next-btn {
+        cursor: pointer;
+        background: url(/system/ckeditor_assets/pictures/453135/content_slider_arow_inactive.png) no-repeat center/cover;
+        width: 30px;
+        height: 14px;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    ._customer-docs-slider__next-btn:hover {
+        background: url(/system/ckeditor_assets/pictures/453136/content_slider_arow_active.png) no-repeat center/cover;
+        width: 30px;
+        height: 14px;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    ._customer-docs-slider {
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0;
+    }
+
+    ._customer-certificates__items_2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    ._customer-certificates__item_2 {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        border-radius: 10px;
+        background: #ffffff;
+        height: 400px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-certificates__item_2 img {
+        border-radius: 10px;
+    }
+
+    ._customer-certificates__item_2:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+    }
+
+    ._customer-inform-block {
+        background: url(/system/ckeditor_assets/pictures/453140/content_blue_block-bg.png) no-repeat center/cover;
+    }
+
+    ._customer-inform-block__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 90px 10px;
+    }
+
+    ._customer-inform-block__subtitle {
+        margin-bottom: 40px;
+        max-width: 800px;
+    }
+
+    ._customer-inform-block__subtitle span {
+        font: 300 24px/36px "Geologica", sans-serif;
+        color: #ffffff;
+    }
+
+    ._customer-inform-block__template {
+        background: #ffffff;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1490196078);
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+
+    ._customer-template__container {
+        padding: 30px 20px;
+    }
+
+    .customer-template__text span {
+        font: 300 18px/27px "Geologica", sans-serif;
+        display: inline;
+    }
+
+    ._customer-template__link {
+        display: inline;
+        cursor: pointer;
+        color: #003399;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font: 300 18px/27px "Geologica", sans-serif;
+    }
+
+    ._customer-template__link:hover {
+        text-decoration: none;
+    }
+
+    ._customer-inform-block__suptitle {
+        max-width: 925px;
+    }
+
+    ._customer-inform-block__suptitle span {
+        font: 300 18px/27px "Geologica", sans-serif;
+        color: #ffffff;
+    }
+
+    .swiper-pagination-current {
+        font: 700 18px/27px 'Geologica', sans-serif;
+    }
+
+    .swiper-pagination-total {
+        font: 400 18px/27px 'Geologica', sans-serif;
+    }
+
+    .swiper-pagination-fraction {
+        font: 400 18px/27px 'Geologica', sans-serif;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 5px;
+    }
+
+    @media(max-width:1250px) {
+        ._customer-intro__inner-container {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        ._customer-grid__item_1 {
+            position: static;
+        }
+
+        ._customer-certificates__item_2 {
+            height: auto;
+        }
+
+        ._customer-grid__container {
+            gap: 50px;
+        }
+    }
+
+    @media(max-width:978px) {
+        ._customer-intro__inner-container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        ._customer-intro-general__wrapper {
+            position: static;
+            -ms-flex-item-align: center;
+            align-self: center;
+        }
+
+        ._customer-intro__info {
+            max-width: 100%;
+        }
+
+        ._customer-adv__grid {
+            display: none;
+        }
+
+        ._customer-adv-slider {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        ._customer-adv-slider-slide-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        ._customer-adv-slider-slide-logo,
+        ._customer-adv-slider-slide-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        ._customer-adv-slider-slide-text span {
+            font: 400 18px/27px 'Geologica', sans-serif;
+        }
+
+        ._customer-adv-swiper__pagination {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 24px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        ._customer-adv-swiper__pagination .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            opacity: 1;
+            border-radius: 50%;
+            background: #404040;
+        }
+
+        ._customer-adv-swiper__pagination .swiper-pagination-bullet-active {
+            width: 8px;
+            height: 8px;
+            opacity: 1;
+            border-radius: 50%;
+            background: #003399;
+        }
+    }
+
+    @media(max-width:767px) {
+
+        ._customer-intro__container,
+        ._customer-docs__container,
+        ._customer-inform-block__container {
+            padding: 20px 10px;
+        }
+
+        ._customer-intro__title h2 {
+            font-size: 44px;
+            line-height: 45px;
+        }
+
+        ._customer-intro__title,
+        ._customer-intro__info span:last-of-type,
+        ._customer-adv__title,
+        ._customer-docs__title,
+        ._customer-inform-block__subtitle,
+        ._customer-inform-block__template {
+            margin-bottom: 20px;
+        }
+
+        ._customer-intro__info span,
+        ._customer-intro__list-item,
+        .swiper-pagination-current,
+        .swiper-pagination-total,
+        .swiper-pagination-fraction,
+        ._customer-adv-slider-slide-text span,
+        ._customer-inform-block__subtitle span,
+        .customer-template__text span,
+        ._customer-template__link,
+        ._customer-inform-block__suptitle span,
+        ._customer-intro__info span ._customer-bolder {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        ._customer-intro__info span {
+            margin-bottom: 10px;
+        }
+
+        ._customer-intro__list-item {
+            margin-bottom: 10px !important;
+        }
+
+        ._customer-intro__inner-container {
+            gap: 10px;
+        }
+
+        ._customer-adv__title h2,
+        ._customer-docs__title h2 {
+            font-size: 32px;
+            line-height: 35px;
+        }
+
+        ._customer-adv__container {
+            padding: 0 10px 20px;
+        }
+
+        ._customer-docs-general__wrapper {
+            gap: 10px;
+        }
+
+        ._customer-template__container {
+            padding: 20px;
+        }
+
+        ._customer-inform-block__template {
+            max-width: 100%;
+        }
+
+        ._customer-inform-block__suptitle span {
+            display: inline;
+        }
+
+        ._customer-inform-block {
+            background-position: left;
+        }
+    }
+
+    @media(max-width:480px) {
+
+        ._customer-intro__container,
+        ._customer-docs__container,
+        ._customer-inform-block__container {
+            padding: 10px;
+        }
+
+        ._customer-intro__title h2 {
+            font-size: 32px;
+            line-height: 35px;
+        }
+
+        ._customer-intro__info span,
+        ._customer-intro__list-item,
+        .swiper-pagination-current,
+        .swiper-pagination-total,
+        .swiper-pagination-fraction,
+        ._customer-adv-slider-slide-text span,
+        ._customer-inform-block__subtitle span,
+        .customer-template__text span,
+        ._customer-template__link,
+        ._customer-inform-block__suptitle span,
+        ._customer-intro__info span ._customer-bolder {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        ._customer-adv__title h2,
+        ._customer-docs__title h2 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        ._customer-adv-slider-slide-logo img {
+            width: 50px;
+        }
+
+        ._customer-intro__inner-container {
+            display: block;
+        }
+
+        ._customer-intro-slider {
+            max-width: 100%;
+        }
+
+        ._customer-certificates__item_1 {
+            max-width: 100%;
+        }
+
+        ._customer-adv-slider-slide-text span {
+            text-align: center;
+        }
+    }
+
+    @media(max-width:360px) {
+        ._customer-intro__title h2 {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        ._customer-adv__title h2,
+        ._customer-docs__title h2 {
+            font-size: 24px;
+        }
+    }
+</style>
+<div class="_customer-hash">
+    <div class="_customer-hash__container">
+        <div class="_customer-about">
+            <div class="_customer-about__container">
+                <section class="_cutomer-intro">
+                    <div class="_customer-intro__container">
+                        <div class="_customer-intro__title">
+                            <h2>
+                                О компании
+                            </h2>
+                        </div>
+                        <div class="_customer-intro__inner-container">
+                            <div class="_customer-intro__info">
+                                <span>
+                                    Наша компания занимается оптовой и розничной продажей
+                                    аккумуляторных&nbsp;батарей <span class="_customer-bolder">с 2015 года.</span>
+                                </span>
+                                <span>
+                                    В наличии большой выбор батарей для легковых и грузовых автомобилей, мотоциклов,
+                                    систем бесперебойного питания, складской и строительной техники.
+                                </span>
+                                <div class="_customer-intro__list">
+                                    <ul>
+                                        <li class="_customer-intro__list-item">
+                                            Мы не завышаем цены, так как работаем напрямую с производителями.
+                                        </li>
+                                        <li class="_customer-intro__list-item">
+                                            Отлаженная система логистики и поставок позволяет нам удовлетворять
+                                            потребность как розничных, так и оптовых клиентов по всей территории
+                                            страны.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="_customer-intro-general__wrapper">
+                                <div class="_customer-slider_pagination-block">
+                                    <div class="_customer-intro-swiper__pagination"></div>
+                                    <div class="_customer-intro-swiper-btns">
+                                        <div class="_customer-intro-slider__prev-btn"></div>
+                                        <div class="_customer-intro-slider__next-btn"></div>
+                                    </div>
+                                </div>
+                                <div class="_customer-certificates__gallery_1 _customer-intro-slider swiper">
+                                    <div
+                                        class="_customer-certificates__items_1 _customer-slider-container swiper-wrapper">
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458012/content_content_intro_photo_1.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458013/content_content_intro_photo_2.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458014/content_content_intro_photo_3.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458015/content_content_intro_photo_4.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458016/content_content_intro_photo_5.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458017/content_content_intro_photo_6.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458018/content_content_intro_photo_7.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458019/content_content_intro_photo_8.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458020/content_content_intro_photo_9.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458021/content_content_intro_photo_10.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458022/content_content_intro_photo_11.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458023/content_content_intro_photo_12.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458024/content_content_intro_photo_13.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458025/content_content_intro_photo_14.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458026/content_content_intro_photo_15.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458027/content_content_intro_photo_16.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                        <figure
+                                            class="_customer-certificates__item_1 _customer-slider-slide swiper-slide">
+                                            <img src="/system/ckeditor_assets/pictures/458028/content_content_intro_photo_17.jpg"
+                                                loading="lazy">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="_customer-pop-up" id="_customer-gallery__pop-up_1">
+                                        <div class="_customer-pop-up__overlay"></div>
+                                        <div class="_customer-pop-up__content-wrapper">
+                                            <div class="_customer-pop-up__content"><img alt="" src="" /></div>
+                                            <button
+                                                class="_customer-pop-up__button _customer-pop-up__button_prev">Вперед</button>
+                                            <button
+                                                class="_customer-pop-up__button _customer-pop-up__button_next">Назад</button>
+                                            <button
+                                                class="_customer-pop-up__button _customer-pop-up__button_close">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-adv">
+                    <div class="_customer-adv__container">
+                        <div class="_customer-adv__title">
+                            <h2>
+                                НАШИ ПРЕИМУЩЕСТВА
+                            </h2>
+                        </div>
+                        <div class="_customer-adv__grid _customer-grid">
+                            <div class="_customer-grid__container">
+                                <div class="_customer-grid__item _customer-grid__item_1">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453163/content_adv_icon_1.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Гарантия на&nbsp;аккумуляторы до&nbsp;4&nbsp;лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item_2">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453164/content_adv_icon_2.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Поставка напрямую от&nbsp;производителей
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item_3">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453165/content_adv_icon_3.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Скидка до&nbsp;3000 рублей за&nbsp;старый аккумулятор
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item_4">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453166/content_adv_icon_4.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Доставка по&nbsp;Санкт‑Петербургу
+                                            </span>
+                                            <span>
+                                                и&nbsp;установка
+                                            </span>
+                                            <span>
+                                                в&nbsp;день
+                                                обращения
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-adv-slider swiper">
+                            <div class="_customer-adv-slider-container swiper-wrapper">
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide-container">
+                                        <div class="_customer-adv-slider-slide-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453163/content_adv_icon_1.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Гарантия на&nbsp;аккумуляторы до&nbsp;4&nbsp;лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide-container">
+                                        <div class="_customer-adv-slider-slide-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453164/content_adv_icon_2.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Поставка напрямую от&nbsp;производителей
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide-container">
+                                        <div class="_customer-adv-slider-slide-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453165/content_adv_icon_3.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Скидка до&nbsp;3000 рублей за&nbsp;старый аккумулятор
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-adv-slider-slide swiper-slide">
+                                    <div class="_customer-adv-slider-slide-container">
+                                        <div class="_customer-adv-slider-slide-logo">
+                                            <img src="/system/ckeditor_assets/pictures/453166/content_adv_icon_4.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-adv-slider-slide-text">
+                                            <span>
+                                                Доставка по&nbsp;Санкт‑Петербургу и&nbsp;установка в&nbsp;день
+                                                обращения
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-adv-swiper__pagination"></div>
+                    </div>
+                </section>
+                <section class="_customer-docs">
+                    <div class="_customer-docs__container">
+                        <div class="_customer-docs__title">
+                            <h2>
+                                ЛИЦЕНЗИИ И&nbsp;СЕРТИФИКАТЫ
+                            </h2>
+                        </div>
+                        <div class="_customer-docs-general__wrapper">
+                            <div class="_customer-slider_pagination-block">
+                                <div class="_customer-docs-swiper__pagination"></div>
+                                <div class="_customer-docs-swiper-btns">
+                                    <div class="_customer-docs-slider__prev-btn"></div>
+                                    <div class="_customer-docs-slider__next-btn"></div>
+                                </div>
+                            </div>
+                            <div class="_customer-certificates__gallery_2 _customer-docs-slider swiper">
+                                <div class="_customer-certificates__items_2 _customer-slider-container swiper-wrapper">
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453167/content_sertificate_1.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453168/content_sertificate_2.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453169/content_sertificate_3.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453170/content_sertificate_4.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453171/content_sertificate_5.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453172/content_sertificate_6.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453173/content_sertificate_7.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453174/content_sertificate_8.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453175/content_sertificate_9.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <figure class="_customer-certificates__item_2 _customer-slider-slide swiper-slide">
+                                        <img src="/system/ckeditor_assets/pictures/453176/content_sertificate_10.jpg"
+                                            loading="lazy">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="_customer-pop-up" id="_customer-gallery__pop-up_2">
+                                    <div class="_customer-pop-up__overlay"></div>
+                                    <div class="_customer-pop-up__content-wrapper">
+                                        <div class="_customer-pop-up__content"><img alt="" src="" /></div>
+                                        <button
+                                            class="_customer-pop-up__button _customer-pop-up__button_prev">Вперед</button>
+                                        <button
+                                            class="_customer-pop-up__button _customer-pop-up__button_next">Назад</button>
+                                        <button
+                                            class="_customer-pop-up__button _customer-pop-up__button_close">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-inform-block">
+                    <div class="_customer-inform-block__container">
+                        <div class="_customer-inform-block__subtitle">
+                            <span>
+                                На нашем складе огромное количество аккумуляторов в наличии.
+                                Профессиональные сотрудники подберут нужную батарею, которая точно вашй вид техники.
+                            </span>
+                            <span>
+                                Каждая АКБ заряжена, проверена и готова к работе.
+                            </span>
+                        </div>
+                        <div class="_customer-inform-block__template _customer-template">
+                            <div class="_customer-template__container">
+                                <div class="customer-template__text">
+                                    <span>
+                                        Самостоятельно подобрать нужную батарею по марке транспорта,
+                                        вы&nbsp;можете в нашем онлайн-каталоге по ссылке:
+                                    </span>
+                                    <span class="_customer-template__link"
+                                        onclick="window.open('//akb98.ru/podbor/', '_blank');yaCounter93280302.reachGoal('megasite_about_link_akb98_ru'); return true;">https://akb98.ru/podbor/</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-inform-block__suptitle">
+                            <span>
+                                Отгрузка осуществляется ежедневно через любую удобную для Вас транспортную компанию.
+                                География&nbsp;поставок - вся территория России и страны СНГ. Предоставляем
+                                бесплатную консультацию
+                            </span>
+                            <span>
+                                по&nbsp;применению аккумуляторных батарей.
+                            </span>
+                            <span>
+                                Мы благодарны нашим партнерам за работу, а также всегда открыты к новому
+                                сотрудничеству.
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script async>
+    const companyHeader = document.querySelector('.company-header__content')
+    companyHeader.classList.add('_customer-visually-hidden')
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const galleryList = document.querySelectorAll("._customer-certificates__items_1");
+        galleryList.forEach(function (item, index) {
+            let gallery = item.closest("._customer-certificates__gallery_1"),
+                galleryImage = item.getElementsByClassName(
+                    "_customer-certificates__item_1"
+                ),
+                galleryPopUp = gallery.querySelector(`#_customer-gallery__pop-up_1`),
+                galleryPopUpPrev = galleryPopUp.querySelector(
+                    "._customer-pop-up__button_prev"
+                ),
+                galleryPopUpNext = galleryPopUp.querySelector(
+                    "._customer-pop-up__button_next"
+                ),
+                galleryPopUpContent = galleryPopUp.querySelector(
+                    "._customer-pop-up__content"
+                );
+            let galleryImageCurrent = 0;
+            item.onclick = function (e) {
+                let array = [];
+                for (let i = 0; i < galleryImage.length; i++) {
+                    array.push(galleryImage[i]);
+                }
+
+                if (e.target.classList.contains("_customer-certificates__item_1")) {
+                    galleryImageCurrent = array.indexOf(e.target);
+                    showImage();
+                    popOpen(`_customer-gallery__pop-up_1`);
+                }
+            };
+            function showImage() {
+
+                galleryPopUpContent.innerHTML =
+                    galleryImage[galleryImageCurrent].innerHTML;
+            }
+
+            galleryPopUpPrev.addEventListener("click", function () {
+                if (galleryImageCurrent == 0) {
+                    galleryImageCurrent = galleryImage.length - 1;
+                } else {
+                    galleryImageCurrent =
+                        (galleryImageCurrent - 1) % galleryImage.length;
+                }
+                showImage();
+            });
+
+            galleryPopUpNext.addEventListener("click", function () {
+                galleryImageCurrent =
+                    (galleryImageCurrent + 1) % galleryImage.length;
+                showImage();
+            });
+        })
+
+        if (typeof popUp === "undefined") {
+            var popUp = [];
+        }
+        popUp = document.querySelectorAll("._customer-pop-up");
+        function popOpen(customId) {
+            let siteBody = document.querySelector("body");
+            siteBody.classList.add("_customer-stop-scroll");
+            for (let i = 0; i < popUp.length; i++) {
+                if (popUp[i].id == customId) {
+                    popUp[i].classList.add("_customer-pop-up_active");
+                }
+            }
+        }
+        let customerOverlay = document.querySelectorAll(
+            "._customer-pop-up__overlay"
+        );
+        customerOverlay.forEach(function (item) {
+            item.addEventListener("click", function () {
+                let siteBody = document.querySelector("body");
+                siteBody.classList.remove("_customer-stop-scroll");
+                for (let i = 0; i < popUp.length; i++)
+                    popUp[i].classList.remove("_customer-pop-up_active");
+            });
+        })
+
+        let customerCloseBtns = document.querySelectorAll(
+            "._customer-pop-up__button_close"
+        );
+
+        customerCloseBtns.forEach((item) => {
+            item.addEventListener("click", function () {
+                let siteBody = document.querySelector("body");
+                siteBody.classList.remove("_customer-stop-scroll");
+                for (let i = 0; i < popUp.length; i++)
+                    popUp[i].classList.remove("_customer-pop-up_active");
+            });
+        });
+    })
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const galleryList = document.querySelectorAll("._customer-certificates__items_2");
+        galleryList.forEach(function (item, index) {
+            let gallery = item.closest("._customer-certificates__gallery_2"),
+                galleryImage = item.getElementsByClassName(
+                    "_customer-certificates__item_2"
+                ),
+                galleryPopUp = gallery.querySelector(`#_customer-gallery__pop-up_2`),
+                galleryPopUpPrev = galleryPopUp.querySelector(
+                    "._customer-pop-up__button_prev"
+                ),
+                galleryPopUpNext = galleryPopUp.querySelector(
+                    "._customer-pop-up__button_next"
+                ),
+                galleryPopUpContent = galleryPopUp.querySelector(
+                    "._customer-pop-up__content"
+                );
+            let galleryImageCurrent = 0;
+            item.onclick = function (e) {
+                let array = [];
+                for (let i = 0; i < galleryImage.length; i++) {
+                    array.push(galleryImage[i]);
+                }
+
+                if (e.target.classList.contains("_customer-certificates__item_2")) {
+                    galleryImageCurrent = array.indexOf(e.target);
+                    showImage();
+                    popOpen(`_customer-gallery__pop-up_2`);
+                }
+            };
+            function showImage() {
+
+                galleryPopUpContent.innerHTML =
+                    galleryImage[galleryImageCurrent].innerHTML;
+            }
+
+            galleryPopUpPrev.addEventListener("click", function () {
+                if (galleryImageCurrent == 0) {
+                    galleryImageCurrent = galleryImage.length - 1;
+                } else {
+                    galleryImageCurrent =
+                        (galleryImageCurrent - 1) % galleryImage.length;
+                }
+                showImage();
+            });
+
+            galleryPopUpNext.addEventListener("click", function () {
+                galleryImageCurrent =
+                    (galleryImageCurrent + 1) % galleryImage.length;
+                showImage();
+            });
+        })
+
+        if (typeof popUp === "undefined") {
+            var popUp = [];
+        }
+        popUp = document.querySelectorAll("._customer-pop-up");
+        function popOpen(customId) {
+            let siteBody = document.querySelector("body");
+            siteBody.classList.add("_customer-stop-scroll");
+            for (let i = 0; i < popUp.length; i++) {
+                if (popUp[i].id == customId) {
+                    popUp[i].classList.add("_customer-pop-up_active");
+                }
+            }
+        }
+        let customerOverlay = document.querySelectorAll(
+            "._customer-pop-up__overlay"
+        );
+        customerOverlay.forEach(function (item) {
+            item.addEventListener("click", function () {
+                let siteBody = document.querySelector("body");
+                siteBody.classList.remove("_customer-stop-scroll");
+                for (let i = 0; i < popUp.length; i++)
+                    popUp[i].classList.remove("_customer-pop-up_active");
+            });
+        })
+
+        let customerCloseBtns = document.querySelectorAll(
+            "._customer-pop-up__button_close"
+        );
+
+        customerCloseBtns.forEach((item) => {
+            item.addEventListener("click", function () {
+                let siteBody = document.querySelector("body");
+                siteBody.classList.remove("_customer-stop-scroll");
+                for (let i = 0; i < popUp.length; i++)
+                    popUp[i].classList.remove("_customer-pop-up_active");
+            });
+        });
+    })
+</script>
+
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script>
+    var introSwiper = new Swiper("._customer-intro-slider", {
+
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 800,
+        loop: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 3000,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        pagination: {
+            el: '._customer-intro-swiper__pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' + '-' + '<span class="' + totalClass + '"></span>';
+            },
+        },
+
+        navigation: {
+            nextEl: '._customer-intro-slider__next-btn',
+            prevEl: '._customer-intro-slider__prev-btn',
+        },
+    });
+</script>
+<script>
+    var advSwiper = new Swiper("._customer-adv-slider", {
+
+        slidesPerView: 1,
+        speed: 300,
+        loop: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 3000,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        pagination: {
+            el: '._customer-adv-swiper__pagination',
+            clickable: true,
+        },
+    });
+</script>
+<script>
+    var docsSwiper = new Swiper("._customer-docs-slider", {
+
+        slidesPerView: 1,
+        spaceBetween: 15,
+        speed: 800,
+        loop: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 3000,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            360: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            978: {
+                slidesPerView: 4,
+            },
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        pagination: {
+            el: '._customer-docs-swiper__pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' + '-' + '<span class="' + totalClass + '"></span>';
+            },
+        },
+
+        navigation: {
+            nextEl: '._customer-docs-slider__next-btn',
+            prevEl: '._customer-docs-slider__prev-btn',
+        },
+    });
+</script>

@@ -1,0 +1,1674 @@
+<link rel="stylesheet" href="/assets/custom_assets/swiper.min.css" />
+<link rel="stylesheet" href="/assets/custom_assets/megasite_slider.min.css" />
+<style>
+    .company-text-zone {
+        margin: 0;
+    }
+
+    .company-products-item__top-section {
+        flex-direction: column;
+    }
+
+    .company-bottom-toolbar {
+        z-index: 10;
+    }
+
+    .tmpl-company-button-cart:before {
+        background-color: transparent !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart {
+        position: relative;
+    }
+
+    .company-products-item-cart:before {
+        background-color: transparent;
+        -webkit-mask-box-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .swiper-slide {
+        overflow: hidden;
+    }
+
+    .company-footer {
+        margin: 0;
+    }
+
+    .upscroll-arrow_visible {
+        z-index: 5;
+    }
+
+    .company-products-item__labels,
+    .discount-product,
+    .company-product-groups__wrapper,
+    .company-products-item__labels,
+    .company-product-groups__show-more-text,
+    .company-content-block,
+    .company-navigation-slider {
+        display: none;
+    }
+
+    .company-product-group {
+        overflow: visible;
+    }
+
+    .product-group__image-wrapper,
+    .company-products-item__image {
+        border: none;
+        border-radius: 0;
+    }
+
+    .company-product-group__name {
+        height: auto;
+    }
+
+    /*products*/
+    .company-products-item__wrapper {
+        margin-right: 0;
+    }
+
+    .company-products-item__top-section {
+        flex-direction: column;
+    }
+
+    /*advantages*/
+    ._customer-adv {
+        position: relative;
+        padding: 0 0 30px;
+    }
+
+    ._customer-adv .swiper-pagination {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    ._customer-adv .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        opacity: 1;
+        border: 1px solid #fff;
+    }
+
+    ._customer-adv .swiper-pagination-bullet-active {
+        background: #fff;
+    }
+</style>
+<style>
+    ._customer-title {
+        font-family: 'Russo One', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        color: #404040;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    ._customer-slider__top {
+        position: relative;
+        top: -201px;
+        margin-bottom: -201px;
+    }
+
+    ._customer-slider__top-navigate {
+        position: absolute;
+        top: 287px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1228px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 7px;
+        z-index: 2;
+        border-bottom: 1px solid #fff;
+    }
+
+    .swiper-wrapper {
+        height: auto;
+    }
+
+    ._customer-slider__top-navigate-btns {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+    }
+
+    ._customer-slider__top .swiper-button-next,
+    ._customer-slider__top .swiper-button-prev {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        opacity: 0.7;
+        cursor: pointer;
+        transform: none;
+    }
+
+    ._customer-slider__top .swiper-button-next::before,
+    ._customer-slider__top .swiper-button-prev::before {
+        display: none;
+    }
+
+    ._customer-slider__top .swiper-button-next:hover,
+    ._customer-slider__top .swiper-button-prev:hover {
+        opacity: 1;
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 0;
+    }
+
+    ._customer-slider__top .swiper-pagination {
+        position: static;
+        width: auto;
+        transform: none;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 100;
+        color: #ffffff;
+    }
+
+    .swiper-pagination-current {
+        font-weight: 600;
+    }
+
+    ._customer-st__slide-wrapper {
+        height: 850px;
+        padding: 342px 0 90px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    ._customer-st__slide-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 10px;
+        height: 418px;
+    }
+
+    ._customer-st__slide-title {
+        font-family: 'Russo One';
+        font-size: 63px;
+        line-height: 74px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    ._customer-st__slide-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    ._customer-st__slide-list li {
+        position: relative;
+        padding-left: 32px;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    ._customer-st__slide-list li::before {
+        content: url(/system/ckeditor_assets/pictures/437018/content_check.png);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    ._customer-st__slide-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 252px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        border-radius: 8px;
+        border: none;
+        background-color: #000000;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    ._customer-st__slide-btn:hover {
+        opacity: 0.7;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+    }
+
+    ._customer-st__slide-text {
+        max-width: 230px;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    ._customer-groups {
+        padding: 30px 0;
+    }
+
+    ._customer-groups__slider {
+        position: relative;
+        padding-bottom: 38px;
+    }
+
+    .company-product-group {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 253px;
+        border-radius: 8px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .company-product-group__name {
+        font-family: Geologica;
+        margin: 0;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #404040 !important;
+    }
+
+    .product-group__image-wrapper {
+        height: 90px;
+        min-height: initial;
+    }
+
+    ._customer-sales {
+        padding: 30px 0;
+        background: url(/system/ckeditor_assets/pictures/437091/content_bg.png) center/cover no-repeat;
+    }
+
+    ._customer-sales__slider {
+        position: relative;
+        margin: 20px 0;
+        padding-bottom: 20px;
+    }
+
+    ._customer-sale__item {
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid transparent;
+    }
+
+    ._customer-sale__item-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 229px;
+        padding: 32px;
+        margin-bottom: 10px;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+    }
+
+    ._customer-sale__item-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 94px;
+    }
+
+    ._customer-sale__item-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 147px;
+        width: 282px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    ._customer-sale__item-image-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 8px;
+    }
+
+    ._customer-sale__item-title {
+        margin-bottom: 6px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #003399 !important;
+    }
+
+    ._customer-sale__item-discont {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 100;
+        color: #000000 !important;
+    }
+
+    ._customer-sale__item-date {
+        margin-top: auto;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 300;
+        color: #000000 !important;
+    }
+
+    ._customer-sales__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 219px;
+        height: 60px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        border-radius: 8px;
+        background-color: #003399;
+    }
+
+    ._customer-products {
+        padding: 30px 0 !important;
+    }
+
+    ._customer-products__wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .company-products-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        transition: all 0.2s ease;
+        box-shadow: inset 0 0 40px 3px #f2f2f2;
+    }
+
+    .company-products-item__image {
+        width: 100%;
+        height: 180px;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: inset 0 0 40px 3px #f2f2f2;
+        border-radius: 8px;
+        background-color: #ffffff;
+        overflow: hidden;
+        border: 1px solid #003399;
+    }
+
+    .company-products-item__image img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .company-products-item__name {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        word-break: break-word;
+        height: 61px;
+        font-family: Geologica;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #000000 !important;
+    }
+
+    .company-products-item__price,
+    .company-products-item__price * {
+        font-family: Geologica;
+        font-size: 18px !important;
+        line-height: 21px;
+        font-weight: 700 !important;
+        color: #000000;
+    }
+
+    .company-products-item__price {
+        margin-top: 10px;
+    }
+
+    .company-products-item__buttons {
+        display: flex;
+        margin-top: auto !important;
+        padding-top: 10px;
+    }
+
+    .tmpl-company-button.aui-button.aui-button_thin {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        min-width: auto !important;
+        height: 40px !important;
+        padding: 0 !important;
+        font-family: Geologica !important;
+        font-size: 14px !important;
+        line-height: 1 !important;
+        font-weight: 500 !important;
+        color: #003399 !important;
+        text-transform: uppercase !important;
+        border-radius: 8px 0 0 8px !important;
+        background-color: #ccd6eb !important;
+        transition: all 0.2s ease !important;
+        opacity: 1 !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart {
+        min-width: 40px !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        background-color: #404040 !important;
+        border: none !important;
+        border-radius: 0 8px 8px 0 !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart::after {
+        transform: translate(-50%, -50%) !important;
+        width: 20px !important;
+        height: 20px !important;
+        margin: 0 !important;
+        -webkit-mask-box-image: none !important;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        content: '';
+        mask-image: none !important;
+        background-position: center !important;
+        background-color: transparent !important;
+        background-image: url(/system/ckeditor_assets/pictures/437020/content_basket.png) !important;
+    }
+
+    .swiper-wrapper {
+        height: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 25px;
+        height: 13px;
+        cursor: pointer;
+        top: 49%;
+        transform: translate(-50%);
+        z-index: 2;
+    }
+
+    .swiper-button-next::before {
+        content: url(/system/ckeditor_assets/pictures/437055/content_arr-next.png);
+        width: 25px;
+        height: 13px;
+    }
+
+    .swiper-button-prev::before {
+        content: url(/system/ckeditor_assets/pictures/437056/content_arr-prev.png);
+        width: 25px;
+        height: 13px;
+    }
+
+    .swiper-button-next:hover::before {
+        content: url(/system/ckeditor_assets/pictures/437058/content_arr-next-hover.png);
+    }
+
+    .swiper-button-prev:hover::before {
+        content: url(/system/ckeditor_assets/pictures/437057/content_arr-prev-hover.png);
+    }
+
+    .swiper-button-prev {
+        left: -74px;
+    }
+
+    .swiper-button-next {
+        right: -97px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        top: auto;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: #404040;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #003399;
+    }
+
+    ._customer-brends {
+        padding: 30px 0;
+        background-color: #f2f2f2;
+    }
+
+    ._customer-brends__slider {
+        position: relative;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    ._customer-brends__slider .swiper-button-prev,
+    ._customer-brends__slider .swiper-button-next {
+        position: static;
+        margin: 0;
+    }
+
+    ._customer-brends__slide-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 169px;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    ._customer-brends__slide-image img {
+        max-width: 100%;
+    }
+
+    ._customer-brends__slider-navigate {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        z-index: 3;
+    }
+
+    ._customer-brends__slider .swiper-button-next,
+    ._customer-brends__slider .swiper-button-prev {
+        transform: none;
+    }
+
+    ._customer-box {
+        padding: 30px 0;
+        background: url(/system/ckeditor_assets/pictures/437059/content_adva-bg.png);
+    }
+
+    ._customer-advantage {
+        margin-bottom: 30px;
+    }
+
+    ._customer-advantage__title {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    ._customer-advantage__inner {
+        border: 1px solid #ffffff;
+    }
+
+    ._customer-advantage__item {
+        text-align: center;
+        padding: 20px;
+    }
+
+    ._customer-advantage__item-image {
+        height: 90px;
+    }
+
+    ._customer-advantage__item-image img {
+        margin: 0 auto;
+    }
+
+    ._customer-advantage__item-text {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    ._customer-about__content {
+        text-align: center;
+    }
+
+    ._customer-about__title {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    ._customer-about-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: left;
+    }
+
+    ._customer-about-text p {
+        margin: 0 !important;
+        font-size: 18px;
+        line-height: 24px !important;
+        font-weight: 300;
+        color: #ffffff;
+        letter-spacing: 0.2px !important;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    ._customer-about-text p:before {
+        content: '';
+        width: 16px;
+        height: 24px;
+        flex-shrink: 0;
+        background-image: url(/system/ckeditor_assets/pictures/437018/content_check.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    ._customer-about__order {
+        margin-top: 9px;
+        padding: 26px 32px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #404040;
+    }
+
+    ._customer-about__order-title {
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    ._customer-order__input {
+        width: 100%;
+        height: 44px !important;
+        padding-left: 18px !important;
+        padding-right: 10px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 300;
+        color: #000;
+        background-color: #ffffff;
+        border-radius: 8px !important;
+        border: 1px solid transparent;
+        outline: none;
+    }
+
+    ._customer-order__input::placeholder {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 300;
+        color: #404040;
+    }
+
+    ._customer-order__buttons {
+        margin-top: 18px;
+    }
+
+    ._customer-order__btn-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        color: #ffffff;
+        text-transform: uppercase;
+        border-radius: 8px;
+        border: none;
+        background-color: #003399;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    ._customer-order__btn-submit:hover {
+        opacity: 0.7;
+    }
+
+    ._customer-order__buttons button:disabled:hover,
+    ._customer-order__buttons button:disabled {
+        opacity: 0.7;
+    }
+
+    ._customer-order__btn-file:disabled:hover,
+    ._customer-order__btn-submit:disabled:hover {
+        cursor: not-allowed;
+    }
+
+    ._customer-section__container {
+        max-width: 1248px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 1420px) {
+
+        ._customer-groups__slider-navigate,
+        ._customer-sales__slider-navigate,
+        ._customer-brends__slider-navigate {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev,
+        .swiper-pagination {
+            position: static;
+            transform: none;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 1248px) {
+        ._customer-slider__top-navigate {
+            padding: 0 10px;
+            padding-bottom: 7px;
+        }
+
+        .company-product-group__name {
+            font-size: 16px;
+        }
+
+        .company-product-group {
+            padding-right: 15px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .company-product-group__name {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        ._customer-st__slide-wrapper {
+            background-position-x: 30%;
+            height: 500px;
+            padding: 260px 0 30px;
+        }
+
+        ._customer-slider__top-navigate {
+            top: 220px;
+        }
+
+        ._customer-st__slide-list {
+            gap: 8px;
+        }
+
+        ._customer-st__slide-title {
+            font-size: 16px;
+            line-height: 1.2;
+            max-width: 200px;
+        }
+
+        ._customer-title {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+
+        ._customer-st__slide-text {
+            font-size: 12px;
+            max-width: 180px;
+        }
+
+        .company-product-group {
+            height: 160px;
+            padding: 10px;
+        }
+
+        ._customer-st__slide-list li {
+            padding-left: 20px;
+            font-size: 12px;
+        }
+
+        ._customer-st__slide-box {
+            height: 215px;
+        }
+
+        ._customer-st__slide-btn {
+            width: 160px;
+            height: 45px;
+            font-size: 14px;
+        }
+
+        ._customer-sale__item-date,
+        ._customer-sale__item-discont,
+        ._customer-sale__item-title,
+        ._customer-about-text p,
+        ._customer-advantage__item-text,
+        .company-products-item__price,
+        .company-products-item__price *,
+        .company-product-group__name {
+            font-size: 12px !important;
+            line-height: 1.2 !important;
+        }
+
+        ._customer-sale__item-content {
+            min-height: 60px;
+        }
+
+        ._customer-sale__item {
+            padding: 0px;
+            text-align: center;
+        }
+
+        ._customer-sale__item-image {
+            height: 100px;
+            padding: 10px;
+        }
+
+        ._customer-sale__item-image-wrapper {
+            height: 100%;
+            width: 100%;
+        }
+
+        ._customer-products__wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .company-products-item__image {
+            height: 100px;
+        }
+
+        .company-products-item__name {
+            height: 41px;
+            font-size: 12px;
+            line-height: 1.2;
+            margin-top: 10px;
+        }
+
+        .company-products-item__price {
+            height: 29px;
+        }
+
+        ._customer-brends__slide-image {
+            height: 100px;
+            padding: 10px;
+        }
+
+        ._customer-advantage__item-image img {
+            max-width: 50px;
+        }
+
+        ._customer-advantage__item-image {
+            height: auto;
+        }
+
+        ._customer-about__order {
+            padding: 15px 10px;
+        }
+    }
+</style>
+<section class="_customer-section _customer-slider__top">
+    <div class="_customer-slider__top-navigate">
+        <div class="swiper-pagination"></div>
+        <div class="_customer-slider__top-navigate-btns">
+            <div class="swiper-button-prev">
+                <img src="/system/ckeditor_assets/pictures/437065/content_arr-prev.png" alt="" />
+            </div>
+            <div class="swiper-button-next">
+                <img src="/system/ckeditor_assets/pictures/437066/content_arr-next.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="_customer-st__slide-wrapper"
+                style="background-image: url(/system/ckeditor_assets/pictures/437061/content_slide-02.png)">
+                <div class="_customer-section__container">
+                    <div class="_customer-st__slide-box">
+                        <div class="_customer-st__slide-title">Аккумуляторы для&nbsp;легковых автомобилей в&nbsp;наличии
+                        </div>
+                        <div class="_customer-st__slide-content">
+                            <ul class="_customer-st__slide-list">
+                                <li>AKOM</li>
+                                <li>MUTLU</li>
+                                <li>TOPLA</li>
+                                <li>VARTA и другие бренды</li>
+                            </ul>
+                        </div>
+                        <a class="_customer-st__slide-btn"
+                            onclick="yaCounter93280302.reachGoal('megasite_mobile_link_catalog_11819163');return true;"
+                            href="/catalog/k-11819163-akkumulyatory_dlya_legkovykh_avto">В каталог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="swiper-slide">
+                <div class="_customer-st__slide-wrapper"
+                    style="background-image: url(/system/ckeditor_assets/pictures/437060/content_slide-01.png)">
+                    <div class="_customer-section__container">
+                        <div class="_customer-st__slide-box">
+                            <div class="_customer-st__slide-title">
+                                Большой выбор аккумуляторов для&nbsp;грузовой техники
+                            </div>
+                            <div class="_customer-st__slide-content">
+                                <ul class="_customer-st__slide-list">
+                                    <li>BOSCH</li>
+                                    <li>CONTACT</li>
+                                    <li>TYUMEN BATTERY</li>
+                                    <li>VARTA и другие бренды</li>
+                                </ul>
+                            </div>
+                            <a class="_customer-st__slide-btn"
+                                onclick="yaCounter93280302.reachGoal('megasite_mobile_link_catalog_11819162');return true;"
+                                href="/catalog/k-11819162-akkumulyatory_dlya_gruzovoy_tekhniki">В каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="_customer-st__slide-wrapper"
+                  style="background-image: url(/system/ckeditor_assets/pictures/437063/content_slide-04.png)">
+                  <div class="_customer-section__container">
+                      <div class="_customer-st__slide-box">
+                          <div class="_customer-st__slide-title">
+                              Аккумуляторы для&nbsp;мототехники с&nbsp;гарантией качества
+                          </div>
+                          <div class="_customer-st__slide-content">
+                              <ul class="_customer-st__slide-list">
+                                  <li>DELTA</li>
+                                  <li>DYNAVOLT</li>
+                                  <li>LANDPORT</li>
+                                  <li>YUASA и другие бренды</li>
+                              </ul>
+                          </div>
+                          <a class="_customer-st__slide-btn"
+                              onclick="yaCounter93280302.reachGoal('megasite_mobile_link_catalog_11819165');return true;"
+                              href="/catalog/k-11819165-akkumulyatory_dlya_mototekhniki">В каталог</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            
+            <div class="swiper-slide">
+                <div class="_customer-st__slide-wrapper"
+                    style="background-image: url(/system/ckeditor_assets/pictures/437062/content_slide-03.png)">
+                    <div class="_customer-section__container">
+                        <div class="_customer-st__slide-box">
+                            <div class="_customer-st__slide-title">Аккумуляторы <br />для катеров и&nbsp;лодок</div>
+                            <div class="_customer-st__slide-content">
+                                <ul class="_customer-st__slide-list">
+                                    <li>ATLAS E-NEX</li>
+                                    <li>DELKOR</li>
+                                    <li>DEKA</li>
+                                    <li>WBR MARINE и другие бренды</li>
+                                </ul>
+                            </div>
+                            <a class="_customer-st__slide-btn"
+                                onclick="yaCounter93280302.reachGoal('megasite_mobile_link_catalog_11819164');return true;"
+                                href="/catalog/k-11819164-akkumulyatory_dlya_lodok_i_katerov">В каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="_customer-st__slide-wrapper"
+                    style="background-image: url(/system/ckeditor_assets/pictures/437064/content_slide-05.png)">
+                    <div class="_customer-section__container">
+                        <div class="_customer-st__slide-box">
+                            <div class="_customer-st__slide-title">Аккумуляторы оптом</div>
+                            <div class="_customer-st__slide-content">
+                                <div class="_customer-st__slide-text">
+                                    Наша компания может обеспечить снабжение любого парка техники или&nbsp;магазина
+                                </div>
+                            </div>
+                            <button class="_customer-st__slide-btn ab-order js-apress-order-button js-get-order-form"
+                                data-company-contacts-url="/contacts"
+                                data-company-name="Петербургская Аккумуляторная Компания"
+                                data-params='{"company_id":"99783180"}' data-type="message"
+                                onclick="yaCounter93280302.reachGoal('megasite_mobile_write_us');return true;">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="_customer-section _customer-groups">
+    <div class="_customer-section__container">
+        <div class="_customer-section _customer-groups__slider">
+            <div class="_customer-groups__slider-navigate">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="_customer-section _customer-sales">
+    <div class="_customer-section__container">
+        <div class="_customer-sales__title _customer-title">Наши акции</div>
+        <div class="_customer-sales__slider">
+            <div class="_customer-sales__slider-navigate">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+        </div>
+        <a class="_customer-sales__btn"
+            onclick="yaCounter93280302.reachGoal('megasite_mobile_link_sales');return true;" href="/sales">Все
+            акции</a>
+    </div>
+</section>
+<div class="_customer-products">
+    <div class="_customer-section__container">
+        <div class="_customer-products__title _customer-title">Наша продукция</div>
+        <div class="_customer-products__wrap"></div>
+    </div>
+</div>
+<section class="_customer-section _customer-brends">
+    <div class="_customer-section__container">
+        <div class="_customer-brends__title _customer-title">Бренды</div>
+        <div class="_customer-brends__slider">
+            <div class="_customer-brends__slider-navigate">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437042/content_item-1.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437043/content_item-2.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437044/content_item-3.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437045/content_item-4.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437046/content_item-5.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437047/content_item-6.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437132/content_item-1.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437133/content_item-2.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437134/content_item-3.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437135/content_item-4.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437136/content_item-5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437137/content_item-7.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437138/content_item-8.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437139/content_item-9.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437140/content_item-10.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437141/content_item-12.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437142/content_item-13.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437143/content_item-14.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437144/content_item-15.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437145/content_item-16.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437146/content_item-17.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437147/content_item-19.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437148/content_item-20.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437149/content_item-21.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437150/content_item-22.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437151/content_item-23.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437152/content_item-25.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437153/content_item-26.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437154/content_item-27.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437155/content_item-29.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437156/content_item-31.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437157/content_item-32.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437158/content_item-33.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-brends__slide-image">
+                            <img src="/system/ckeditor_assets/pictures/437159/content_item-34.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="_customer-section _customer-box">
+    <section class="_customer-section _customer-advantage  _customer-adv">
+        <div class="swiper-pagination"></div>
+        <div class="_customer-section__container">
+            <div class="_customer-advantage__title _customer-title">Наши преимущества</div>
+            <div class="swiper-container">
+                <div class="_customer-advantage__inner swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="_customer-advantage__item">
+                            <div class="_customer-advantage__item-image">
+                                <img src="/system/ckeditor_assets/pictures/437038/content_item-1.png" alt="" />
+                            </div>
+                            <div class="_customer-advantage__item-text">Гарантия на&nbsp;аккумуляторы до&nbsp;4&nbsp;лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-advantage__item">
+                            <div class="_customer-advantage__item-image">
+                                <img src="/system/ckeditor_assets/pictures/437039/content_item-2.png" alt="" />
+                            </div>
+                            <div class="_customer-advantage__item-text">Поставка напрямую от&nbsp;производителей</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-advantage__item">
+                            <div class="_customer-advantage__item-image">
+                                <img src="/system/ckeditor_assets/pictures/437040/content_item-3.png" alt="" />
+                            </div>
+                            <div class="_customer-advantage__item-text">
+                                Скидка до&nbsp;3000 рублей за&nbsp;старый аккумулятор
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-advantage__item">
+                            <div class="_customer-advantage__item-image">
+                                <img src="/system/ckeditor_assets/pictures/437041/content_item-4.png" alt="" />
+                            </div>
+                            <div class="_customer-advantage__item-text">
+                                Доставка по&nbsp;Санкт&#8209;Петербургу и&nbsp;установка в&nbsp;день обращения
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="_customer-section _customer-about">
+        <div class="_customer-section__container">
+            <div class="_customer-about__content">
+                <div class="_customer-about__title _customer-title">О компании</div>
+                <div class="_customer-about-text">
+                    <p>
+                        Наша компания занимается продажей, доставкой и&nbsp;установкой аккумуляторных батарей
+                        на&nbsp;любой вид техники.
+                    </p>
+                    <p>
+                        Не завышаем цены и работаем напрямую с производителями.
+                    </p>
+                    <p>Удобная доставка товара по Санкт-Петербургу и СЗФО.</p>
+                </div>
+            </div>
+            <div class="_customer-about__order">
+                <div class="_customer-about__order-title">
+                    Наши специалисты помогут с&nbsp;подбором аккумулятора и&nbsp;ответят на&nbsp;все ваши вопросы
+                </div>
+                <div class="_customer-about__order-form">
+                    <div class="_customer-order__inputs">
+                        <label class="_customer-order__label">
+                            <input class="_customer-order__input" id="_customerPhone" placeholder="Ваш телефон"
+                                required="" type="tel" />
+                        </label>
+                    </div>
+                    <div class="_customer-order__buttons">
+                        <button
+                            class="_customer-order__btn-submit ab-order js-apress-order-button js-orders-callback-link"
+                            data-button-type="order_callback" data-company="99783180" data-company-id="99783180"
+                            data-company-name="Петербургская Аккумуляторная Компания" data-company-name-rest=""
+                            data-company-url="/catalog" data-params='{"company_id":"99783180"}' data-statistics="1"
+                            data-type="callback" disabled="disabled" id="_customerSubmit"
+                            onclick="yaCounter93280302.reachGoal('megasite_mobile_callback');return true;">
+                            Заказать звонок
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="/assets/custom_assets/imask.js"></script>
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script>
+    const sliderBrends = new Swiper('._customer-brends__slider .swiper-container', {
+        slidesPerView: 1,
+        speed: 900,
+        keyboard: {
+            enabled: true,
+        },
+        spaceBetween: 10,
+        navigation: {
+            prevEl: '._customer-brends__slider .swiper-button-prev',
+            nextEl: '._customer-brends__slider .swiper-button-next',
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+            },
+            600: {
+                slidesPerView: 3,
+            },
+            900: {
+                slidesPerView: 5,
+            },
+        },
+    });
+    const sliderTop = new Swiper('._customer-slider__top .swiper-container', {
+        slidesPerView: 1,
+        loop: true,
+        keyboard: {
+            enabled: true,
+        },
+        speed: 900,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ' ._customer-slider__top .swiper-pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' + '-' + '<span class="' + totalClass + '"></span>';
+            },
+        },
+        navigation: {
+            prevEl: '._customer-slider__top .swiper-button-prev',
+            nextEl: '._customer-slider__top .swiper-button-next',
+        },
+    });
+    const sliderAdv = new Swiper("._customer-adv .swiper-container", {
+        slidesPerView: 1,
+        loop: true,
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: "._customer-adv .swiper-pagination",
+            dinamicBullets: true,
+            clickable: true,
+        },
+        autoplay: {
+            delay: 6000,
+        },
+        speed: 900,
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const products = document.querySelectorAll(".company-products-item");
+
+        function content(items, inner, block) {
+            if (items && items.length > 0) {
+                items.forEach((item) => {
+                    const wrap = document.querySelector(inner);
+                    if (wrap) {
+                        wrap.append(item);
+                    }
+                });
+            } else {
+                document.querySelector(block).remove();
+            }
+        }
+        content(products, "._customer-products__wrap", "._customer-products");
+    });
+</script>
+<script>
+    const sliderGroups = new Swiper('._customer-groups__slider .swiper-container', {
+        spaceBetween: 10,
+        speed: 900,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: '._customer-groups__slider .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            prevEl: '._customer-groups__slider .swiper-button-prev',
+            nextEl: '._customer-groups__slider .swiper-button-next',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+            },
+            600: {
+                slidesPerView: 3,
+            },
+            900: {
+                slidesPerView: 5,
+            },
+        },
+    });
+    const sliderSales = new Swiper('._customer-sales__slider .swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        speed: 900,
+        keyboard: {
+            enabled: true,
+        },
+        navigation: {
+            prevEl: '._customer-sales__slider .swiper-button-prev',
+            nextEl: '._customer-sales__slider .swiper-button-next',
+        },
+        pagination: {
+            el: "._customer-sales__slider .swiper-pagination",
+            dinamicBullets: true,
+            clickable: true,
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            600: {
+                slidesPerView: 2,
+            }
+        },
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('button._customer-st__slide-btn').addEventListener('click', () => {
+            setTimeout(() => {
+                document.querySelector(
+                    '#order_messages_attributes_0_text'
+                ).value = `Добрый день!\nХочу уточнить у вас про оптовую закупку аккумуляторов`;
+            }, 1000);
+        });
+
+        const groups = document.querySelectorAll(".company-product-group");
+        const groupsSlider = document.querySelector('._customer-groups__slider .swiper-wrapper');
+        if (groups) {
+            groups.forEach((item) => {
+                item.classList.add('swiper-slide');
+                groupsSlider.append(item);
+            });
+            sliderGroups.update();
+        } else {
+            document.querySelector('._customer-groups').remove();
+        }
+
+        fetch('/sales').then((response) => response.text()).then((html) => {
+            const parser = new DOMParser().parseFromString(html, 'text/html');
+            const salesItems = parser.querySelectorAll('.company-offers__item');
+
+            if (salesItems) {
+                const salesBox = document.querySelector('._customer-sales__slider .swiper-wrapper');
+
+                salesItems.forEach((item) => {
+                    let image = item.querySelector('.company-offers__image');
+                    let title = item.querySelector('.company-offers__title');
+                    let date = item.querySelector('.company-offers__date');
+                    let discont = item.querySelector('.company-offers__info');
+                    let link = item.querySelector('.company-offers__title');
+
+                    if (title) {
+                        title = title.textContent;
+                    }
+                    if (date) {
+                        date = date.textContent;
+                    }
+                    if (discont) {
+                        discont = discont.textContent;
+                    }
+                    if (link) {
+                        link = link.href;
+                    }
+
+                    if (image.tagName == 'IMG') {
+                        image = image.getAttribute('src');
+                    } else {
+                        image =
+                            'https://cdn.stpulscen.ru/assets/packs/_/node_modules/@apress/apress-ui/dist/pulscen/cb732c8a1a802ef17e908060ce907f7e-cb732c8a1a802ef17e908060ce907f7e.svg';
+                    }
+                    const renderNewItem = `<a class="swiper-slide _customer-sale__item" href="${link}">
+                                                <div class="_customer-sale__item-image">
+                                                    <div class="_customer-sale__item-image-wrapper">
+                                                        <img src="${image}" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="_customer-sale__item-content">
+                                                    <div class="_customer-sale__item-title">${title}</div>
+                                                    <div class="_customer-sale__item-discont">${discont}</div>
+                                                    <div class="_customer-sale__item-date">${date}</div>
+                                                </div>
+                                            </a>`;
+                    salesBox.insertAdjacentHTML('beforeend', renderNewItem);
+                    sliderSales.update();
+                });
+            } else {
+                document.querySelector('_customer-sales').remove();
+            }
+        }).catch((err) => console.log('Failed to fetch page: ', err));
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        function setImask(id) {
+            let element = document.getElementById(id);
+            let maskOptions = { mask: '+7 (000) 000-00-00', lazy: false };
+            let mask = new IMask(element, maskOptions);
+        }
+        setImask('_customerPhone');
+        const _customerInputs = document.querySelectorAll('._customer-order__input');
+        setInterval(function () {
+            _customerInputs.forEach((item) => {
+                if (item.value === '' || item.value == '+7 (___) ___-__-__') {
+                    item.style.borderColor = '#ff6e58';
+                }
+                if (item.value && item.value !== '+7 (___) ___-__-__') {
+                    item.style.borderColor = '#c2c2c2';
+                }
+            });
+        }, 1000);
+        const _customerSubmitButton = document.querySelector('#_customerSubmit');
+        _customerSubmitButton.disabled = true;
+
+        function formValidate() {
+            _customerSubmitButton.disabled =
+                [...document.querySelectorAll('._customer-order__input:required')].filter(
+                    (element) => element.value === '' || element.value === 0
+                ).length !== 0
+                    ? true
+                    : false;
+            _customerSubmitButton.disabled == true ? true : false;
+        }
+        document.querySelectorAll('._customer-order__input:required').forEach((element) => {
+            element.addEventListener('change', () => {
+                formValidate();
+            });
+            element.addEventListener('mouseout', () => {
+                formValidate();
+            });
+        });
+        function openWidget() {
+            setTimeout(() => {
+                document.querySelector('.orders-callback .js-callback-phone-input').value =
+                    document.querySelector('#_customerPhone').value;
+            }, 1000);
+        }
+        _customerSubmitButton.addEventListener('click', function (event) {
+            openWidget();
+        });
+    });
+</script>
